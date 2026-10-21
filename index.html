@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html>
 
+
+  <head>
+    <title>Change Button Colour</title>
+  </head>
+  <body>
+    <button id="colorButton">Click me to change colour</button>
+
+    <script>
+      //Get refernce to the button element
+      var button=document.getElementById("colourButton");
+
+      //function to change buttton colour
+      function changeColor() {
+        // Generate a random color (hexadecimal)
+        var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+        // Set the button's background color to the random color
+        button.style.backgroundColor = randomColor;
+      }
+
+      // Add a click event listener to the button
+      button.addEventListener("click", changeColor
+    </script>
+  </body>
+
   <head>
     <img src = "WebBanner2026.png" alt="Banner" width="1200" height = "300">
       <h1><b>ENG0018 Computer Laboratory 2026/27</b></h1>
@@ -187,10 +211,6 @@ classifier confidence to drop, as in Vlachos (2008)
         Innovations in Sustainable Energy (pp. 55-78). London: GreenTech Publishing.
       </pre>
     </p>
-  
-
-
-
 
           
 
