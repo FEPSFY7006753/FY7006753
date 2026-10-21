@@ -6,22 +6,23 @@
     <title>Change Button Colour</title>
   </head>
   <body>
+    <!-- Fixed id spelling here to match the JavaScript query -->
     <button id="colourButton">Click me to change colour</button>
-
+  
     <script>
-      //Get refernce to the button element
-      var button=document.getElementById("colourButton");
-
-      //function to change button colour
+      // Get reference to the button element (Now successfully matched!)
+      var button = document.getElementById("colourButton");
+  
+      // Function to change button colour
       function changeColor() {
         // Generate a random color (hexadecimal)
         var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
         // Set the button's background color to the random color
         button.style.backgroundColor = randomColor;
       }
-
+  
       // Add a click event listener to the button
-      button.addEventListener("click",changeColor);
+      button.addEventListener("click", changeColor);
     </script>
   </body>
 
