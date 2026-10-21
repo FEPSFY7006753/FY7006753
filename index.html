@@ -6,13 +6,13 @@
     <title>Change Button Colour</title>
   </head>
   <body>
-    <button id="colorButton">Click me to change colour</button>
+    <button id="colourButton">Click me to change colour</button>
 
     <script>
       //Get refernce to the button element
       var button=document.getElementById("colourButton");
 
-      //function to change buttton colour
+      //function to change button colour
       function changeColor() {
         // Generate a random color (hexadecimal)
         var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
@@ -21,7 +21,7 @@
       }
 
       // Add a click event listener to the button
-      button.addEventListener("click", changeColor);
+      button.addEventListener("click",changeColor);
     </script>
   </body>
 
